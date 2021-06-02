@@ -10,6 +10,7 @@ The group wanted to explore how lego sets have changed from 1950 to 2020.
 ETL Project
 Use various csv files in different formats and combine them to have one comprenhsive dataframe that can be used in SQL.
 
+![](image/getting_started.png)
 
 Extraction
 We downloaded three different data sets in csv form. One covered the years 1950-2017 was downloaded from data.world. The data.world csv schema had many columns that needed to be narrowed down.  The 2020 data was downloaded from Kaggle in diffenet csv files that needed to be joined.
@@ -17,6 +18,7 @@ We downloaded three different data sets in csv form. One covered the years 1950-
 Transform
 Read in three csv files to create dataframes that would be used for the cleaning process.  After the original dataframes were created we joined the sets and themes data frames so the joined dataframe matched the cleaned schema of the 1950 cleaned dataframe.   The 1950 dataframe and 2020 were joined to create a new schema that allowed both years to be in the same table. The final dataframe was read into SQL to create a table.
 
+![](image/cleaning.png)
 
 Potential Uses
 This allows the lego themes and sets to be identified by name and theme name from 1950-2020 in one table as opposed to searching thru multiple files which require cross refrencing.
@@ -25,6 +27,7 @@ This allows the lego themes and sets to be identified by name and theme name fro
 Normalization of Datasets
 Each csv file started with a different schema.  We used pandas and SQL to select the columns needed from each data set.  Then the data sets were joined to combined information to allow the set and theme names to show up for each year.  Then we created a SQL table result_c.
 
+![](image/end.png)
 
 Steps to Create
  1. Read in each csv.
